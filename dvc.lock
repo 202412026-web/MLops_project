@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python mlops_project/src/preprocessing.py
+    deps:
+    - path: mlops_project/data/raw/Data_CU_venta.csv
+      hash: md5
+      md5: fdd106a1c6d2b3d1233a5b5527e22dde
+      size: 54525952
+    - path: mlops_project/src/preprocessing.py
+      hash: md5
+      md5: 3f342ac625edd90af891d9268a351f79
+      size: 675
+    outs:
+    - path: mlops_project/data/processed/test.csv
+      hash: md5
+      md5: d0159e63800a27c3038cbd202d705569
+      size: 8153292
+    - path: mlops_project/data/processed/train.csv
+      hash: md5
+      md5: 0482a7bd326e3113d4d921f9d2bfd984
+      size: 32590712
+  train:
+    cmd: python mlops_project/src/train.py
+    deps:
+    - path: mlops_project/data/processed/train.csv
+      hash: md5
+      md5: 0482a7bd326e3113d4d921f9d2bfd984
+      size: 32590712
+    - path: mlops_project/src/train.py
+      hash: md5
+      md5: ead954fc5b4b6a4dbc9063fdbb071b00
+      size: 1480
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: 9457f86c7298ec2f8e71f49aef87810d
+      size: 3647
