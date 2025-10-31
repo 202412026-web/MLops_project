@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/PROJECT_GIT/mlruns/459991583152993973/c56c6d2671b1413fb0ba896403b6ecad/artifacts
+end_time: 1761895923939
+entry_point_name: ''
+experiment_id: '459991583152993973'
+lifecycle_stage: active
+run_id: c56c6d2671b1413fb0ba896403b6ecad
+run_name: amusing-snipe-657
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761895923836
+status: 4
+tags: []
+user_id: dcastro

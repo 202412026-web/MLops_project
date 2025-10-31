@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/PROJECT_GIT/mlruns/459991583152993973/9fa6a0281ee24945b2098c2674c8981e/artifacts
+end_time: 1761896052933
+entry_point_name: ''
+experiment_id: '459991583152993973'
+lifecycle_stage: active
+run_id: 9fa6a0281ee24945b2098c2674c8981e
+run_name: sassy-mule-277
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761896052207
+status: 4
+tags: []
+user_id: dcastro
