@@ -1,0 +1,16 @@
+stages:
+  preprocess:
+    cmd: python mlops_project/src/preprocessing.py
+    deps:
+    - mlops_project/data/raw/Data_CU_venta.csv
+    - mlops_project/src/preprocessing.py
+    outs:
+    - mlops_project/data/processed/test.csv
+    - mlops_project/data/processed/train.csv
+  train:
+    cmd: python mlops_project/src/train.py
+    deps:
+    - mlops_project/data/processed/train.csv
+    - mlops_project/src/train.py
+    outs:
+    - models/model.pkl
